@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'Agence Jour J - Wedding Planner</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+
+        .hero {
+            position: relative;
+            height: 500px;
+            display: flex;
+            overflow: hidden;
+        }
+
+        .hero-text {
+            background-color: #a64938;
+            color: white;
+            width: 35%;
+            padding: 60px 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+        }
+
+        .hero-text::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 2px;
+            height: 200px;
+            background-color: white;
+        }
+
+        .hero-text h1 {
+            font-size: 3.5em;
+            font-weight: 300;
+            margin-bottom: 15px;
+            line-height: 1;
+        }
+
+        .hero-text .tagline {
+            font-size: 1em;
+            font-style: italic;
+            margin-bottom: 30px;
+            letter-spacing: 2px;
+        }
+
+        .hero-text p {
+            font-size: 1.1em;
+            font-style: italic;
+            line-height: 1.6;
+            margin-bottom: 8px;
+        }
+
+        .hero-image {
+            width: 65%;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="500"><rect fill="%23d4a574"/></svg>');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 80px 40px;
+        }
+
+        .section-title {
+            font-size: 2.5em;
+            font-weight: 300;
+            margin-bottom: 60px;
+            color: #333;
+        }
+
+        .section-title::before {
+            content: '';
+            display: inline-block;
+            width: 60px;
+            height: 3px;
+            background-color: #a64938;
+            margin-right: 20px;
+            vertical-align: middle;
+        }
+
+        .columns {
+            display: flex;
+            gap: 80px;
+            align-items: flex-start;
+        }
+
+        .column {
+            flex: 1;
+        }
+
+        .column h3 {
+            font-size: 1.4em;
+            font-weight: 400;
+            margin-bottom: 30px;
+            line-height: 1.5;
+        }
+
+        .column ul {
+            list-style: none;
+        }
+
+        .column ul li {
+            font-size: 1.1em;
+            margin-bottom: 15px;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .column ul li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: #a64938;
+            font-size: 1.5em;
+        }
+
+        .column p {
+            font-size: 1.1em;
+            font-style: italic;
+            line-height: 1.8;
+            color: #666;
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                height: auto;
+            }
+
+            .hero-text,
+            .hero-image {
+                width: 100%;
+            }
+
+            .hero-text {
+                padding: 40px 30px;
+            }
+
+            .hero-text::after {
+                display: none;
+            }
+
+            .hero-text h1 {
+                font-size: 2.5em;
+            }
+
+            .hero-image {
+                height: 300px;
+            }
+
+            .columns {
+                flex-direction: column;
+                gap: 40px;
+            }
+
+            .content {
+                padding: 40px 20px;
+            }
+
+            .section-title {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="hero">
+        <div class="hero-text">
+            <h1>L'Agence Jour J</h1>
+            <div class="tagline">PLANIFIEZ. CRÉEZ. IMMORTALISEZ.</div>
+            <p>Des événements que l'on ressent.</p>
+            <p>Des images que l'on garde.</p>
+            <p>Des projets qui ont du sens.</p>
+        </div>
+        <div class="hero-image"></div>
+    </section>
+
+    <section class="content">
+        <h2 class="section-title">WEDDING PLANNER & ORGANISATRICE D'ÉVÉNEMENTS</h2>
+
+        <div class="columns">
+            <div class="column">
+                <h3>J'accompagne l'organisation de mariages et d'événements avec une vision globale, une attention fine
+                    aux détails et une réelle sérénité à chaque étape.</h3>
+                <p>Chaque décision est pensée pour créer une expérience fluide, cohérente et fidèle à votre histoire.
+                </p>
+            </div>
+
+            <div class="column">
+                <h3>Accompagnements possibles :</h3>
+                <ul>
+                    <li>Organisation complète ou partielle</li>
+                    <li>Coordination et présence le jour J</li>
+                    <li>Conseil et structuration du projet</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contactez L'Agence Jour J - Wedding Planner, Photographe & Graphiste">
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="img\logo\logo Plan de travail 1.png">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Calendly Widget -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    <title>Contact - L'Agence Jour J</title>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" data-testid="main-navigation">
+        <div class="nav-container">
+            <div class="nav-logo" data-testid="nav-logo">L'Agence Jour J</div>
+            <ul class="nav-menu" data-testid="nav-menu">
+                <li><a href="index.html#accueil" data-testid="nav-link-accueil">Accueil</a></li>
+                <li><a href="index.html#wedding" data-testid="nav-link-wedding">Wedding Planner</a></li>
+                <li><a href="index.html#photographie" data-testid="nav-link-photo">Photographie</a></li>
+                <li><a href="index.html#graphisme" data-testid="nav-link-graphisme">Graphisme</a></li>
+                <li><a href="index.html#conseil" data-testid="nav-link-conseil">Conseil Marketing & Com'</a></li>
+                <li><a href="contact.html" class="nav-cta" data-testid="nav-link-contact">Contact</a></li>
+            </ul>
+            <div class="nav-toggle" data-testid="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Hero -->
+    <section class="contact-hero" data-testid="contact-hero">
+        <div class="contact-hero-content">
+            <h1 data-testid="contact-title">Parlons de votre projet</h1>
+            <p data-testid="contact-subtitle">Réponse garantie sous 48h ouvrées</p>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="contact-section" data-testid="contact-section">
+        <div class="contact-container">
+            <!-- Contact Form -->
+            <div class="contact-form-wrapper" data-testid="contact-form-wrapper">
+                <h2 data-testid="form-title">Envoyez-moi un message</h2>
+                <form class="contact-form" data-testid="contact-form">
+                    <div class="form-group">
+                        <label for="nom" data-testid="label-nom">Nom complet *</label>
+                        <input type="text" id="nom" name="nom" required data-testid="input-nom">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" data-testid="label-email">Email *</label>
+                        <input type="email" id="email" name="email" required data-testid="input-email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telephone" data-testid="label-telephone">Téléphone</label>
+                        <input type="tel" id="telephone" name="telephone" data-testid="input-telephone">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="service" data-testid="label-service">Service souhaité *</label>
+                        <select id="service" name="service" required data-testid="select-service">
+                            <option value="">-- Choisissez un service --</option>
+                            <option value="wedding">Wedding Planner & Organisation d'événements</option>
+                            <option value="photographie">Photographie</option>
+                            <option value="graphisme">Graphisme & Identité visuelle</option>
+                            <option value="conseil">Conseil Marketing & Communication</option>
+                            <option value="autre">Autre demande</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="date" data-testid="label-date">Date de l'événement (si applicable)</label>
+                        <input type="date" id="date" name="date" data-testid="input-date">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="budget" data-testid="label-budget">Budget estimé</label>
+                        <select id="budget" name="budget" data-testid="select-budget">
+                            <option value="">-- Sélectionnez une fourchette --</option>
+                            <option value="-2000">Moins de 2 000 €</option>
+                            <option value="2000-5000">2 000 € - 5 000 €</option>
+                            <option value="5000-10000">5 000 € - 10 000 €</option>
+                            <option value="10000+">Plus de 10 000 €</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message" data-testid="label-message">Message *</label>
+                        <textarea id="message" name="message" rows="6" required data-testid="textarea-message"
+                            placeholder="Parlez-moi de votre projet, vos envies, vos besoins..."></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-button" data-testid="submit-button">
+                        <i class="fas fa-paper-plane"></i> Envoyer le message
+                    </button>
+                </form>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="contact-info-wrapper" data-testid="contact-info-wrapper">
+                <h2 data-testid="info-title">Coordonnées</h2>
+
+                <div class="contact-info-card" data-testid="contact-info-card">
+                    <div class="contact-info-item" data-testid="info-email">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:lagencejourj@gmail.com">lagencejourj@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item" data-testid="info-phone">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Téléphone</h4>
+                            <a href="tel:+33618161208">06.18.16.12.08</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item" data-testid="info-location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Localisation</h4>
+                            <p>France<br>Déplacements possibles</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item" data-testid="info-hours">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Disponibilité</h4>
+                            <p>Lun - Ven : 9h - 18h<br>Week-end : Sur rendez-vous</p>
+                        </div>
+                    </div>
+                </div>
+
+                
+                </div>
+
+                <!-- Calendly Button -->
+                <div class="calendly-section" data-testid="calendly-section">
+                    <h3>Prendre rendez-vous</h3>
+                    <p>Planifiez un appel découverte</p>
+                    <button onclick="openCalendly()" class="calendly-button" data-testid="calendly-button">
+                        <i class="fas fa-calendar-alt"></i> Réserver un créneau
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" data-testid="main-footer">
+        <div class="footer-container">
+            <div class="footer-column" data-testid="footer-about">
+                <h3>L'Agence Jour J</h3>
+                <p>Wedding Planner, Photographe & Créative basée en France. Je vous accompagne dans la création de
+                    moments inoubliables et d'images intemporelles.</p>
+            </div>
+
+            <div class="footer-column" data-testid="footer-links">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="index.html#wedding" data-testid="footer-link-wedding">Wedding Planner</a></li>
+                    <li><a href="index.html#photographie" data-testid="footer-link-photo">Photographie</a></li>
+                    <li><a href="index.html#graphisme" data-testid="footer-link-graphisme">Graphisme</a></li>
+                    <li><a href="index.html#conseil" data-testid="footer-link-conseil">Conseil Marketing & Com'</a></li>
+                    <li><a href="contact.html" data-testid="footer-link-contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column" data-testid="footer-contact">
+                <h3>Contact</h3>
+                <ul class="footer-contact-list">
+                    <li><i class="fas fa-envelope"></i> <a href="mailto:lagencejourj@gmail.com"
+                            data-testid="footer-email">lagencejourj@gmail.com</a></li>
+                    <li><i class="fas fa-phone"></i> <a href="tel:+33618161208" data-testid="footer-phone">06.18.16.12.08</a></li>
+                    <li><i class="fas fa-map-marker-alt"></i> France</li>
+                </ul>
+                
+            </div>
+        </div>
+
+        <div class="footer-bottom" data-testid="footer-bottom">
+            <p>&copy; 2025 L'Agence Jour J. Tous droits réservés.</p>
+            <p><a href="mentions-legales.html" data-testid="footer-legal">Mentions Légales</a> | <a href="#"
+                    data-testid="footer-privacy">Politique de confidentialité</a></p>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("Ac1PWvvtdPyzLo271");
+        })();
+    </script>
+
+    <script src="script.js"></script>
+    
+    <!-- Calendly Popup -->
+    <script type="text/javascript">
+        function openCalendly() {
+            Calendly.initPopupWidget({url: 'https://calendly.com/lagencejourj'});
+            return false;
+        }
+    </script>
+    
+    <!-- Chatbot Widget -->
+    <link rel="stylesheet" href="chatbot.css">
+    <script>
+        window.CHATBOT_BACKEND_URL = 'https://jourj-site-update.preview.emergentagent.com';
+    </script>
+    <script src="chatbot.js"></script>
+</body>
+
+</html>
